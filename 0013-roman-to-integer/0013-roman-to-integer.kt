@@ -11,12 +11,13 @@ class Solution {
         )
         
         var result = 0
-        
+
+        // for (i in 0..s.length-1) {
         for (i in s.indices) {
-            val current = romanMap[s[i]]!!
+            val current = romanMap.getValue(s[i])
 
             // 다음 문자 있고 && 현재 < 다음 면은 -
-            if (i <s.length -1  && current < romanMap[s[i+1]]!!) {
+            if (i <s.length -1  && current < romanMap.getValue(s[i+1])) {
                 result -= current
             } else {
                 result += current
