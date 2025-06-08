@@ -43,7 +43,9 @@
  * class ListNode(var `val`: Int) {
  *     var next: ListNode? = null
  * }
+
  */
+ ```
 class Solution {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
         val dummy = ListNode(0) // 가짜 더미 시작점
@@ -75,3 +77,4 @@ class Solution {
         return dummy.next // 가짜 더미 시작점 다음부터가 진짜 시작점
     }
 }
+```
